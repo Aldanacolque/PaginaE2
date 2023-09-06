@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "BlinkMacSystemFont", -apple-system, "Roboto",
+    "Lucida Sans";
+  background-color: #f1666d;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2e8e1;
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
