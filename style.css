@@ -2,29 +2,121 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Lucida Sans";
 }
 
 body {
   font-family: "Montserrat", "BlinkMacSystemFont", -apple-system, "Roboto",
     "Lucida Sans";
-  background-color: #f1666d;
+
+  background: white;
+  color: #704214;
 }
 
-nav {
+.header {
+  background: #704214;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: #f2e8e1;
-  padding: 1rem;
+  padding: 0 50px;
+  position: fixed;
+  width: 100%;
+  height: 70px;
 }
 
-ul {
-  list-style: none;
+.navbar,
+.navbar-list {
   display: flex;
-  gap: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
-nav a {
-  text-decoration: none;
+.navbar {
+  gap: 10rem;
+}
+.navbar-list {
+  gap: 30px;
+}
+
+.navbar-list a {
+  color: white;
+}
+
+.logo {
+  height: 100%;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hero */
+
+#hero {
+  margin-top: 65px;
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 60px;
+  color: #704214;
+  min-width: 500px;
+  width: 80%;
+}
+
+.hero-info p {
+  font-size: medium;
+  width: 70%;
   color: black;
+}
+
+.btn {
+  color: white;
+  background-color: #704214;
+  padding: 9px 25px;
+  border-radius: 20px;
+  border-color: #704214;
+}
+
+.btn2 {
+  color: #704214;
+  background-color: antiquewhite;
+  padding: 7px 25px;
+  border-radius: 20px;
+  border-style: solid;
+}
+
+.hero-card {
+  background: antiquewhite;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  width: 400px;
+}
+
+.text-center {
+  text-align: center;
 }
